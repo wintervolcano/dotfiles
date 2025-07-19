@@ -1,0 +1,14 @@
+{
+    "description": "New Rule (Spacebar to left_shift (+ when you type spacebar only, send spacebar))",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "left_shift" }],
+            "to_if_alone": [{ "key_code": "spacebar" }],
+            "type": "basic"
+        }
+    ]
+}
